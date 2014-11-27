@@ -14,6 +14,7 @@ MCSessionDelegate {
     
     @IBOutlet var chatView: UITextView!
     @IBOutlet var messageField: UITextField!
+    @IBOutlet var displayLable: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ MCSessionDelegate {
         self.browser.delegate = self;
         self.assistant = MCAdvertiserAssistant(serviceType:serviceType,discoveryInfo:nil, session:self.session)
         self.assistant.start()
+
     }
     
     @IBAction func sendChat(sender: UIButton) {
@@ -86,8 +88,10 @@ MCSessionDelegate {
     func session(session: MCSession!, didReceiveStream stream: NSInputStream!,withName streamName: String!, fromPeer peerID: MCPeerID!)  {
     }
     
-    func session(session: MCSession!, peer peerID: MCPeerID!,
-        didChangeState state: MCSessionState)  {
+    func session(session: MCSession!, peer peerID: MCPeerID!, didChangeState state: MCSessionState)  {
+        if(state.rawValue == 2){ // 2 means "Connected!" (successfully to a peer)
+            displayLable.text = "Play Against: "+peerID.displayName
+        }
     }
     
 }
