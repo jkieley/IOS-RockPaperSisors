@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5386D781A26CAD300BEB7C0 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5386D771A26CAD300BEB7C0 /* DeviceViewController.swift */; };
 		D5526B481A26A53500F52055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5526B471A26A53500F52055 /* AppDelegate.swift */; };
 		D5526B4A1A26A53500F52055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5526B491A26A53500F52055 /* ViewController.swift */; };
 		D5526B4D1A26A53500F52055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5526B4B1A26A53500F52055 /* Main.storyboard */; };
@@ -94,6 +95,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D5386D771A26CAD300BEB7C0 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceViewController.swift; path = ../DeviceViewController.swift; sourceTree = "<group>"; };
 		D5526B421A26A53500F52055 /* RockPaperSisors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperSisors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5526B461A26A53500F52055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5526B471A26A53500F52055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		D5526B441A26A53500F52055 /* RockPaperSisors */ = {
 			isa = PBXGroup;
 			children = (
+				D5386D771A26CAD300BEB7C0 /* DeviceViewController.swift */,
 				D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */,
 				D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */,
 				D5895F571A26A5EE008F8CB9 /* User.swift */,
@@ -358,6 +361,7 @@
 			files = (
 				D5895F581A26A5EE008F8CB9 /* DatabaseService.swift in Sources */,
 				D5526B4A1A26A53500F52055 /* ViewController.swift in Sources */,
+				D5386D781A26CAD300BEB7C0 /* DeviceViewController.swift in Sources */,
 				D5526B481A26A53500F52055 /* AppDelegate.swift in Sources */,
 				D5895F5A1A26A5EE008F8CB9 /* User.swift in Sources */,
 				D5895F591A26A5EE008F8CB9 /* SecondaryViewController.swift in Sources */,

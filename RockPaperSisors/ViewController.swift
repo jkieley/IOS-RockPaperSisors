@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MultipeerConnectivity
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
