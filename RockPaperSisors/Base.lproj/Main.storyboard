@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YhF-yp-kRn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="itG-qW-1dG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="OnCreate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dij-ab-ej9"/>
+                                    <segue destination="akD-0e-hPX" kind="show" id="aqc-YC-WG9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="205"/>
+            <point key="canvasLocation" x="1693" y="205"/>
         </scene>
         <!--UserInfoController-->
         <scene sceneID="kea-Pp-R8c">
@@ -122,11 +122,23 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="OnClick_ScissorsButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="j8h-DD-0gB"/>
+                                    <action selector="OnClick_ScissorsButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="P3W-N5-387"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-iw-II7">
+                                <rect key="frame" x="9" y="138" width="302" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50h-RU-mWe">
+                                <rect key="frame" x="42" y="307" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOv-VB-q6H">
-                                <rect key="frame" x="137" y="256" width="30" height="30"/>
+                                <rect key="frame" x="144" y="255" width="30" height="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -134,25 +146,23 @@
                                     <action selector="OnClick_PlayButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="xq2-UG-SXO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-iw-II7">
-                                <rect key="frame" x="52" y="138" width="216" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eZL-n6-pTr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="Button_Paper" destination="Llg-Lb-8g9" id="4hV-QR-tvp"/>
                         <outlet property="Button_Play" destination="AOv-VB-q6H" id="bsa-8P-dpy"/>
+                        <outlet property="Button_Rock" destination="S9O-up-3MZ" id="tD6-45-tQb"/>
+                        <outlet property="Button_Scissors" destination="7DK-fs-ktD" id="Ffg-7V-dhh"/>
+                        <outlet property="Label_Results" destination="50h-RU-mWe" id="bdf-63-cVA"/>
                         <outlet property="Label_UserChoice" destination="pOO-iw-II7" id="Cfm-uY-p9q"/>
-                        <outlet property="OnClick_ScissorsButton" destination="7DK-fs-ktD" id="Frd-02-rWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icm-n7-dac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1552" y="205"/>
+            <point key="canvasLocation" x="2201" y="205"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="GUM-p3-aub">
@@ -179,25 +189,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBO-AZ-CV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150" y="391"/>
+            <point key="canvasLocation" x="5118" y="391"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="eBH-q9-uH6">
+        <scene sceneID="088-GT-y1a">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YhF-yp-kRn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="itG-qW-1dG" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PYV-KS-d7A">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jxi-8g-GjK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5FR-SL-5BT"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nu1-3d-2fB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U9F-ll-c6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MW4-2y-mMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="205"/>
+            <point key="canvasLocation" x="881" y="205"/>
         </scene>
     </scenes>
 </document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B567FE1C-16B8-42AD-9902-8B154DAE0220</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RockPaperSisors</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6095D0917DD5F6B2563A7F627F17EC9D5D3BCDA1</key>
+		<string>https://github.com/jkieley/IOS-RockPaperSisors.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RockPaperSisors.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6095D0917DD5F6B2563A7F627F17EC9D5D3BCDA1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jkieley/IOS-RockPaperSisors.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6095D0917DD5F6B2563A7F627F17EC9D5D3BCDA1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6095D0917DD5F6B2563A7F627F17EC9D5D3BCDA1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RockPaperSisors</string>
+		</dict>
+	</array>
+</dict>
+</plist>
