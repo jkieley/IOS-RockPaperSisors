@@ -13,6 +13,7 @@ class DeviceViewController: UIViewController, MCBrowserViewControllerDelegate, M
     
     @IBOutlet var displayLable: UILabel!
     @IBOutlet var letsPlayButton: UIButton!
+    var user:User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +63,7 @@ class DeviceViewController: UIViewController, MCBrowserViewControllerDelegate, M
             viewController.session = self.session
             viewController.assistant = self.assistant
             viewController.peerID = self.peerID
+            viewController.user = self.user
         }
     }
     

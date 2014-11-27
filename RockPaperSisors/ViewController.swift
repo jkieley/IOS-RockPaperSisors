@@ -69,5 +69,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     func handleTap(recognizer: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "toChoose") {
+            let viewController:DeviceViewController = segue.destinationViewController as DeviceViewController
+            viewController.user = self.user
+        }
+    }
 }
 

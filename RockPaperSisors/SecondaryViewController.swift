@@ -31,6 +31,7 @@ class SecondaryViewController: UIViewController, MCSessionDelegate {
     var assistant : MCAdvertiserAssistant!
     var session : MCSession!
     var peerID: MCPeerID!
+    var user:User!
     
     
     
@@ -164,6 +165,23 @@ class SecondaryViewController: UIViewController, MCSessionDelegate {
             }
         }
     }
+    
+    func updateuserBasedOnResults(){
+        if numberOfPlayers == 1{
+            if userTie{
+                user.ties++
+                DatabaseService().updateUser(user)
+            }
+            else if userWon{
+                user.wins++
+                DatabaseService().updateUser(user)
+            }
+            else{
+                user.looses++
+                DatabaseService().updateUser(user)
+            }
+        }
+    }
 
     func GameLogic_ComputeResults(){
         if userChoice == ROCK {
@@ -249,7 +267,7 @@ class SecondaryViewController: UIViewController, MCSessionDelegate {
     func session(session: MCSession!, didReceiveData data: NSData!,fromPeer peerID: MCPeerID!)  {
         dispatch_async(dispatch_get_main_queue()) {
             var msg: String = NSString(data: data, encoding: NSUTF8StringEncoding) as String
-            self.opponentOutput.text = "Opponent"
+            self.opponentOutput.text = "Opponent Chose!"
             self.opponentChoice = msg.toInt()!
             self.check()
         }
