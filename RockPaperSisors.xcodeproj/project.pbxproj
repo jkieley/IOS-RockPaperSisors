@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5386D781A26CAD300BEB7C0 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5386D771A26CAD300BEB7C0 /* DeviceViewController.swift */; };
 		D5526B481A26A53500F52055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5526B471A26A53500F52055 /* AppDelegate.swift */; };
 		D5526B4A1A26A53500F52055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5526B491A26A53500F52055 /* ViewController.swift */; };
 		D5526B4D1A26A53500F52055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5526B4B1A26A53500F52055 /* Main.storyboard */; };
 		D5526B4F1A26A53500F52055 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5526B4E1A26A53500F52055 /* Images.xcassets */; };
 		D5526B521A26A53500F52055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5526B501A26A53500F52055 /* LaunchScreen.xib */; };
 		D5526B5E1A26A53500F52055 /* RockPaperSisorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5526B5D1A26A53500F52055 /* RockPaperSisorsTests.swift */; };
+		D55E73D01A26E70000D04005 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55E73CF1A26E70000D04005 /* DeviceViewController.swift */; };
 		D5895F581A26A5EE008F8CB9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */; };
 		D5895F591A26A5EE008F8CB9 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */; };
 		D5895F5A1A26A5EE008F8CB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5895F571A26A5EE008F8CB9 /* User.swift */; };
@@ -95,7 +95,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D5386D771A26CAD300BEB7C0 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceViewController.swift; path = ../DeviceViewController.swift; sourceTree = "<group>"; };
 		D5526B421A26A53500F52055 /* RockPaperSisors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperSisors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5526B461A26A53500F52055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5526B471A26A53500F52055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		D5526B571A26A53500F52055 /* RockPaperSisorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperSisorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5526B5C1A26A53500F52055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5526B5D1A26A53500F52055 /* RockPaperSisorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperSisorsTests.swift; sourceTree = "<group>"; };
+		D55E73CF1A26E70000D04005 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceViewController.swift; path = RockPaperSisors/DeviceViewController.swift; sourceTree = "<group>"; };
 		D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
 		D5895F571A26A5EE008F8CB9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -134,6 +134,7 @@
 		D5526B391A26A53500F52055 = {
 			isa = PBXGroup;
 			children = (
+				D55E73CF1A26E70000D04005 /* DeviceViewController.swift */,
 				D5526B441A26A53500F52055 /* RockPaperSisors */,
 				D5526B5A1A26A53500F52055 /* RockPaperSisorsTests */,
 				D5526B431A26A53500F52055 /* Products */,
@@ -152,7 +153,6 @@
 		D5526B441A26A53500F52055 /* RockPaperSisors */ = {
 			isa = PBXGroup;
 			children = (
-				D5386D771A26CAD300BEB7C0 /* DeviceViewController.swift */,
 				D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */,
 				D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */,
 				D5895F571A26A5EE008F8CB9 /* User.swift */,
@@ -361,7 +361,7 @@
 			files = (
 				D5895F581A26A5EE008F8CB9 /* DatabaseService.swift in Sources */,
 				D5526B4A1A26A53500F52055 /* ViewController.swift in Sources */,
-				D5386D781A26CAD300BEB7C0 /* DeviceViewController.swift in Sources */,
+				D55E73D01A26E70000D04005 /* DeviceViewController.swift in Sources */,
 				D5526B481A26A53500F52055 /* AppDelegate.swift in Sources */,
 				D5895F5A1A26A5EE008F8CB9 /* User.swift in Sources */,
 				D5895F591A26A5EE008F8CB9 /* SecondaryViewController.swift in Sources */,

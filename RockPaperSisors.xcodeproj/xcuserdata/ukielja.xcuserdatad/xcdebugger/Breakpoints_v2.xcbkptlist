@@ -23,7 +23,7 @@
                   symbolName = "RockPaperSisors.User.__deallocating_deinit"
                   moduleName = "RockPaperSisors"
                   urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/User.swift"
-                  timestampString = "438753628.873829"
+                  timestampString = "438761562.83611"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
@@ -37,7 +37,7 @@
                   symbolName = "@objc RockPaperSisors.User.__ivar_destroyer"
                   moduleName = "RockPaperSisors"
                   urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/User.swift"
-                  timestampString = "438753628.873986"
+                  timestampString = "438761562.836279"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "11"
@@ -61,6 +61,124 @@
             endingLineNumber = "93"
             landmarkName = "session(_:peer:didChangeState:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RockPaperSisors/DeviceViewController.swift"
+            timestampString = "438759635.345716"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "session(_:peer:didChangeState:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RockPaperSisors/SecondaryViewController.swift"
+            timestampString = "438761330.570521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "SecondaryViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RockPaperSisors.SecondaryViewController.defaultOpponentText.getter : Swift.String"
+                  moduleName = "RockPaperSisors"
+                  urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/SecondaryViewController.swift"
+                  timestampString = "438761562.859137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RockPaperSisors.SecondaryViewController.defaultOpponentText.setter : Swift.String"
+                  moduleName = "RockPaperSisors"
+                  urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/SecondaryViewController.swift"
+                  timestampString = "438761562.859304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RockPaperSisors.SecondaryViewController.defaultOpponentText.materializeForSet : Swift.String"
+                  moduleName = "RockPaperSisors"
+                  urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/SecondaryViewController.swift"
+                  timestampString = "438761562.859515"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RockPaperSisors.SecondaryViewController.init (RockPaperSisors.SecondaryViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; RockPaperSisors.SecondaryViewController"
+                  moduleName = "RockPaperSisors"
+                  urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/SecondaryViewController.swift"
+                  timestampString = "438761562.859643"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "920">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RockPaperSisors.SecondaryViewController.init (RockPaperSisors.SecondaryViewController.Type)() -&gt; RockPaperSisors.SecondaryViewController"
+                  moduleName = "RockPaperSisors"
+                  urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/SecondaryViewController.swift"
+                  timestampString = "438761562.859762"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "856">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RockPaperSisors.SecondaryViewController.init (RockPaperSisors.SecondaryViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; RockPaperSisors.SecondaryViewController"
+                  moduleName = "RockPaperSisors"
+                  urlString = "file:///Users/ukielja/Dropbox/projects/xcode/RockPaperSisors/RockPaperSisors/SecondaryViewController.swift"
+                  timestampString = "438761562.859917"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "852">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

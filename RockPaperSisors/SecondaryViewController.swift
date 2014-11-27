@@ -8,15 +8,16 @@
 
 import Foundation
 import SpriteKit
+import MultipeerConnectivity
 
 
-class SecondaryViewController: UIViewController {
+class SecondaryViewController: UIViewController, MCSessionDelegate {
     //TODO: UserChoice variable
     // Rock:1 Paper:2 Scissors:3
     
     var numberOfPlayers:Int = 1
-    var userChoice:Int = 0
-    var opponentChoice:Int = 0
+    var userChoice:Int = -1
+    var opponentChoice:Int = -1
     var userWon:Bool = false
     var userTie:Bool = false
     let ROCK:Int = 1
@@ -26,6 +27,10 @@ class SecondaryViewController: UIViewController {
     var swipeOne: UISwipeGestureRecognizer!
     var swipeTwo: UISwipeGestureRecognizer!
     var swipeThree: UISwipeGestureRecognizer!
+    
+    var assistant : MCAdvertiserAssistant!
+    var session : MCSession!
+    var peerID: MCPeerID!
     
     
     
@@ -43,7 +48,8 @@ class SecondaryViewController: UIViewController {
     @IBOutlet weak var Label_Results: UILabel!
     
 
-
+    @IBOutlet var opponentOutput: UILabel!
+    var defaultOpponentText: String = "Waiting For Opponent"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +74,8 @@ class SecondaryViewController: UIViewController {
         self.view.addGestureRecognizer(swipeTwo)
         self.view.addGestureRecognizer(swipeThree)
         
-        
+        self.session.delegate = self
+        opponentOutput.text = defaultOpponentText
     }
     
 
@@ -101,9 +108,15 @@ class SecondaryViewController: UIViewController {
     
     @IBAction func OnClick_PlayButton(sender: AnyObject) {
         userTie = false
-        GameLogic_GenerateComputerChoice()
-        GameLogic_ComputeResults()
-        GameLogic_DisplayResults()
+        send(self.userChoice)
+        check()
+    }
+    
+    func check(){
+        if(opponentChoice != -1 && userChoice != -1){
+            GameLogic_ComputeResults()
+            GameLogic_DisplayResults()
+        }
     }
 
     func UI_SetButtonColors(){
@@ -151,26 +164,7 @@ class SecondaryViewController: UIViewController {
             }
         }
     }
-    
-    func GameLogic_GenerateComputerChoice(){
-        opponentChoice = Int(arc4random_uniform(3)) + 1
-        
-        switch(opponentChoice){
-        case 1:
-            println("OpponentChoice: Rock")
-            break
-        case 2:
-            println("OpponentChoice: Paper")
-            break
-        case 3:
-            println("OpponentChoice: Scissors")
-            break
-        default:
-            break
-        }
-        
-    }
-    
+
     func GameLogic_ComputeResults(){
         if userChoice == ROCK {
             switch(opponentChoice){
@@ -239,5 +233,42 @@ class SecondaryViewController: UIViewController {
                 break;
             }
         }
+    }
+
+
+    
+    func send(message: Int){
+        var intMessage = "\(message)"
+        var error : NSError?
+        let msg = intMessage.dataUsingEncoding(NSUTF8StringEncoding,allowLossyConversion: false)
+
+        self.session.sendData(msg, toPeers: self.session.connectedPeers,withMode: MCSessionSendDataMode.Unreliable, error: &error)
+    }
+    
+    // on recieve data
+    func session(session: MCSession!, didReceiveData data: NSData!,fromPeer peerID: MCPeerID!)  {
+        dispatch_async(dispatch_get_main_queue()) {
+            var msg: String = NSString(data: data, encoding: NSUTF8StringEncoding) as String
+            self.opponentOutput.text = "Opponent"
+            self.opponentChoice = msg.toInt()!
+            self.check()
+        }
+    }
+    
+    // The following methods do nothing, but the MCSessionDelegate protocol
+    // requires that we implement them.
+    func session(session: MCSession!,didStartReceivingResourceWithName resourceName: String!,fromPeer peerID: MCPeerID!, withProgress progress: NSProgress!)  {
+    }
+    
+    func session(session: MCSession!,didFinishReceivingResourceWithName resourceName: String!,fromPeer peerID: MCPeerID!,atURL localURL: NSURL!, withError error: NSError!)  {
+    }
+    
+    func session(session: MCSession!, didReceiveStream stream: NSInputStream!,withName streamName: String!, fromPeer peerID: MCPeerID!)  {
+    }
+    
+    func session(session: MCSession!, peer peerID: MCPeerID!, didChangeState state: MCSessionState)  {
+//        if(state.rawValue == 2){ // 2 means "Connected!" (successfully to a peer)
+//            displayLable.text = "Play Against: "+peerID.displayName
+//        }
     }
 }
