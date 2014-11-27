@@ -13,6 +13,11 @@
 		D5526B4F1A26A53500F52055 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5526B4E1A26A53500F52055 /* Images.xcassets */; };
 		D5526B521A26A53500F52055 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5526B501A26A53500F52055 /* LaunchScreen.xib */; };
 		D5526B5E1A26A53500F52055 /* RockPaperSisorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5526B5D1A26A53500F52055 /* RockPaperSisorsTests.swift */; };
+		D5895F581A26A5EE008F8CB9 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */; };
+		D5895F591A26A5EE008F8CB9 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */; };
+		D5895F5A1A26A5EE008F8CB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5895F571A26A5EE008F8CB9 /* User.swift */; };
+		D5895FDD1A26A628008F8CB9 /* Squeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5895FD61A26A61B008F8CB9 /* Squeal.framework */; };
+		D5895FDE1A26A628008F8CB9 /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D5895FD61A26A61B008F8CB9 /* Squeal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +28,70 @@
 			remoteGlobalIDString = D5526B411A26A53500F52055;
 			remoteInfo = RockPaperSisors;
 		};
+		D5895FD11A26A61B008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7247F71996880300151E1E;
+			remoteInfo = "Squeal-OSX";
+		};
+		D5895FD31A26A61B008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7248021996880300151E1E;
+			remoteInfo = "Squeal-OSXTests";
+		};
+		D5895FD51A26A61B008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB4C19C5F6F500862BFD;
+			remoteInfo = "Squeal-iOS";
+		};
+		D5895FD71A26A61B008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB5619C5F6F500862BFD;
+			remoteInfo = "Squeal-iOSTests";
+		};
+		D5895FD91A26A61B008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD3DE27919BCD44B00DED437;
+			remoteInfo = "SquealSpecHelpers-OSX";
+		};
+		D5895FDB1A26A61B008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB7019C5F77900862BFD;
+			remoteInfo = "SquealSpecHelpers-iOS";
+		};
+		D5895FDF1A26A628008F8CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCBEB4B19C5F6F500862BFD;
+			remoteInfo = "Squeal-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5895FE11A26A628008F8CB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D5895FDE1A26A628008F8CB9 /* Squeal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D5526B421A26A53500F52055 /* RockPaperSisors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperSisors.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +104,10 @@
 		D5526B571A26A53500F52055 /* RockPaperSisorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockPaperSisorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5526B5C1A26A53500F52055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5526B5D1A26A53500F52055 /* RockPaperSisorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockPaperSisorsTests.swift; sourceTree = "<group>"; };
+		D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		D5895F571A26A5EE008F8CB9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Squeal.xcodeproj; path = Externals/Squeal/Squeal.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5895FDD1A26A628008F8CB9 /* Squeal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +150,15 @@
 		D5526B441A26A53500F52055 /* RockPaperSisors */ = {
 			isa = PBXGroup;
 			children = (
+				D5895F551A26A5EE008F8CB9 /* DatabaseService.swift */,
+				D5895F561A26A5EE008F8CB9 /* SecondaryViewController.swift */,
+				D5895F571A26A5EE008F8CB9 /* User.swift */,
 				D5526B471A26A53500F52055 /* AppDelegate.swift */,
 				D5526B491A26A53500F52055 /* ViewController.swift */,
 				D5526B4B1A26A53500F52055 /* Main.storyboard */,
 				D5526B4E1A26A53500F52055 /* Images.xcassets */,
 				D5526B501A26A53500F52055 /* LaunchScreen.xib */,
+				D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */,
 				D5526B451A26A53500F52055 /* Supporting Files */,
 			);
 			path = RockPaperSisors;
@@ -112,6 +189,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D5895FC71A26A61B008F8CB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5895FD21A26A61B008F8CB9 /* Squeal.framework */,
+				D5895FD41A26A61B008F8CB9 /* Squeal-OSXTests.xctest */,
+				D5895FD61A26A61B008F8CB9 /* Squeal.framework */,
+				D5895FD81A26A61B008F8CB9 /* Squeal-iOSTests.xctest */,
+				D5895FDA1A26A61B008F8CB9 /* SquealSpecHelpers.framework */,
+				D5895FDC1A26A61B008F8CB9 /* SquealSpecHelpers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +212,12 @@
 				D5526B3E1A26A53500F52055 /* Sources */,
 				D5526B3F1A26A53500F52055 /* Frameworks */,
 				D5526B401A26A53500F52055 /* Resources */,
+				D5895FE11A26A628008F8CB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D5895FE01A26A628008F8CB9 /* PBXTargetDependency */,
 			);
 			name = RockPaperSisors;
 			productName = RockPaperSisors;
@@ -161,6 +253,7 @@
 				TargetAttributes = {
 					D5526B411A26A53500F52055 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 6EMA97NE3S;
 					};
 					D5526B561A26A53500F52055 = {
 						CreatedOnToolsVersion = 6.1;
@@ -179,6 +272,12 @@
 			mainGroup = D5526B391A26A53500F52055;
 			productRefGroup = D5526B431A26A53500F52055 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D5895FC71A26A61B008F8CB9 /* Products */;
+					ProjectRef = D5895FC61A26A61B008F8CB9 /* Squeal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D5526B411A26A53500F52055 /* RockPaperSisors */,
@@ -186,6 +285,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D5895FD21A26A61B008F8CB9 /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = D5895FD11A26A61B008F8CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5895FD41A26A61B008F8CB9 /* Squeal-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-OSXTests.xctest";
+			remoteRef = D5895FD31A26A61B008F8CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5895FD61A26A61B008F8CB9 /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = D5895FD51A26A61B008F8CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5895FD81A26A61B008F8CB9 /* Squeal-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-iOSTests.xctest";
+			remoteRef = D5895FD71A26A61B008F8CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5895FDA1A26A61B008F8CB9 /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = D5895FD91A26A61B008F8CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D5895FDC1A26A61B008F8CB9 /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = D5895FDB1A26A61B008F8CB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D5526B401A26A53500F52055 /* Resources */ = {
@@ -212,8 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5895F581A26A5EE008F8CB9 /* DatabaseService.swift in Sources */,
 				D5526B4A1A26A53500F52055 /* ViewController.swift in Sources */,
 				D5526B481A26A53500F52055 /* AppDelegate.swift in Sources */,
+				D5895F5A1A26A5EE008F8CB9 /* User.swift in Sources */,
+				D5895F591A26A5EE008F8CB9 /* SecondaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = D5526B411A26A53500F52055 /* RockPaperSisors */;
 			targetProxy = D5526B581A26A53500F52055 /* PBXContainerItemProxy */;
+		};
+		D5895FE01A26A628008F8CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Squeal-iOS";
+			targetProxy = D5895FDF1A26A628008F8CB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,9 +490,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RockPaperSisors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/Externals/Squeal/modules";
 			};
 			name = Debug;
 		};
@@ -348,9 +505,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RockPaperSisors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/Externals/Squeal/modules";
 			};
 			name = Release;
 		};
@@ -407,6 +569,7 @@
 				D5526B631A26A53500F52055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5526B641A26A53500F52055 /* Build configuration list for PBXNativeTarget "RockPaperSisorsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +578,7 @@
 				D5526B661A26A53500F52055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

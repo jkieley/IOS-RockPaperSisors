@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  RockPaperSisors
+//  Homework1
 //
-//  Created by Kieley, James P on 11/26/14.
+//  Created by Kieley, James P on 9/21/14.
 //  Copyright (c) 2014 Kieley, James P. All rights reserved.
 //
 
@@ -12,10 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+//        DatabaseService().createUserTable();
         return true
     }
 
@@ -40,6 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+
+//    - See more at: http://www.theappguruz.com/tutorial/use-sqlite-database-swift/#sthash.qAsRjkSL.dpuf
 
 
 }
